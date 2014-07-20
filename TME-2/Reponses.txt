@@ -1,0 +1,23 @@
+
+1 config
+
+Question 1
+RS sur le le GPIO 18, en sortie
+EN sur le GPIO 23, en sortie
+D0, D1, D2,D3 sur les GPIO 4,17,27,22 tous en sortie
+
+Question 2
+Il faut mettre RS à 0, et D3 D2 D1 D0 à 0000 avec EN='1' pendant 100 microsecondes
+puis
+passer à EN='0' pendant 100 microsecondes
+puis
+envoyer D3 D2 D1 D0 à 0001 avec EN='1' pendant 100 microsecondes
+et pour finir mettre EN='0' pendant 100 microsecondes
+
+Pour avoir un clear display
+
+Question 3
+Activer les GPIOs puis les configurer en output, puis l'envoie d'une donnée d'init
+
+
+
